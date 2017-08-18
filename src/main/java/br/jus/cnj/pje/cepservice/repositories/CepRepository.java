@@ -5,5 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import br.jus.cnj.pje.cepservice.model.entities.Cep;
 
 public interface CepRepository extends JpaRepository<Cep, Integer>{
-
+	void deleteByIdCep(Integer idCep);
 }

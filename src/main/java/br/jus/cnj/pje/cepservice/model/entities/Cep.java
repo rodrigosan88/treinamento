@@ -22,7 +22,7 @@ public class Cep implements java.io.Serializable {
 	public static final String TABLE_NAME = "tb_cep";
 	private static final long serialVersionUID = 1L;
 
-	private int idCep;
+	private Integer idCep;
 	private String numeroCep;
 	private String nomeLogradouro;
 	private String nomeBairro;
@@ -37,11 +37,11 @@ public class Cep implements java.io.Serializable {
 	@Id
 	@GeneratedValue(generator = "gen_cep")
 	@Column(name = "id_cep", unique = true, nullable = false)
-	public int getIdCep() {
+	public Integer getIdCep() {
 		return this.idCep;
 	}
 
-	public void setIdCep(int idCep) {
+	public void setIdCep(Integer idCep) {
 		this.idCep = idCep;
 	}
 
